@@ -53,8 +53,9 @@ for (let i = 0; i < ourTeamInfo.length; i++) {
 for (let i = 0; i < ourTeamInfo.length; i++) {
   ourTeamSection.innerHTML += (`<h4>Informazioni sul #${i + 1} membro del team:</h4>`);
   for (let key in ourTeamInfo[i]) {
-    
+    // Se la key è "photo" allora inserirà una stringa che genererà un tag <img> con il relativo attributo src
     if (ourTeamInfo[i]["photo"] === ourTeamInfo[i][key]) {ourTeamSection.innerHTML += (`<img src="img/${ourTeamInfo[i][key]}" alt="${ourTeamInfo[i]["firstname"]} ${ourTeamInfo[i]["lastname"]}">`);}
+    // Altrimenti verrà inserita una stringa stamperà le coppie Chiave-Valore
     else {ourTeamSection.innerHTML += (`<strong>${key.toUpperCase()}:</strong> <em>${ourTeamInfo[i][key]}</em> <br>`);}
   }
 };
