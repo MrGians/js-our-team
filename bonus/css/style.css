@@ -1,4 +1,9 @@
 /*********** Generics ***********/
+body {
+  background: rgb(153,151,8);
+  background: linear-gradient(135deg, rgba(153,151,8,1) 7%, rgba(9,121,73,1) 57%, rgba(0,212,255,1) 100%);
+}
+
 h4 {
   padding-top: 1rem;
   margin-top: 1rem;
@@ -8,7 +13,8 @@ h4 {
 #our-team {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto;
+  border: 10px solid rgba(0, 0, 0, 0.3)
 }
 
 #our-team .cs-card {
