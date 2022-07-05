@@ -1,0 +1,36 @@
+/*********** Generics ***********/
+h4 {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 2px solid brown;
+}
+
+#our-team {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#our-team .cs-card {
+  width: calc(100% / 3 - 1.6rem);
+  text-align: center;
+  background-color: rgb(233, 233, 233);
+  margin: 0.8rem;
+  box-shadow: 0 5px 10px black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: rotate(-5deg);
+  transition: all 150ms ease-in-out; 
+}
+
+#our-team .cs-card img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+#our-team .cs-card:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
