@@ -25,3 +25,13 @@ Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 
 */
+
+// Definisco un array di oggetti con le informazioni di ogni persona
+const ourTeamInfo = [
+  {firstname: "Wayne", lastname: "Barnett", job: "Founder & CEO", photo: "wayne-barnett-founder-ceo.jpg"},
+  {firstname: "Angela", lastname: "Caroll", job: "Chief Editor", photo: "angela-caroll-chief-editor.jpg"},
+  {firstname: "Walter", lastname: "Gordon", job: "Office Manager", photo: "walter-gordon-office-manager.jpg"},
+  {firstname: "Angela", lastname: "Lopez", job: "Social Media Manager", photo: "angela-lopez-social-media-manager.jpg"},
+  {firstname: "Scott", lastname: "Estrada", job: "Developer", photo: "scott-estrada-developer.jpg"},
+  {firstname: "Barbara", lastname: "Ramos", job: "Graphic Designer", photo: "barbara-ramos-graphic-designer.jpg"},
+]
