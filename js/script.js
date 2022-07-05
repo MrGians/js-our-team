@@ -26,6 +26,10 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
 
 */
 
+// Definisco variabili DOM
+const ourTeamSection = document.getElementById("our-team");
+
+
 // Definisco un array di oggetti con le informazioni di ogni persona
 const ourTeamInfo = [
   {firstname: "Wayne", lastname: "Barnett", job: "Founder & CEO", photo: "wayne-barnett-founder-ceo.jpg"},
@@ -36,7 +40,8 @@ const ourTeamInfo = [
   {firstname: "Barbara", lastname: "Ramos", job: "Graphic Designer", photo: "barbara-ramos-graphic-designer.jpg"},
 ]
 
-// Stampo le informazioni di ogni membro in console tramite un FOR con FOR IN innestato
+
+// Stampo le informazioni di ogni membro in console tramite un ciclo FOR con ciclo FOR IN innestato
 for (let i = 0; i < ourTeamInfo.length; i++) {
   console.log(`Informazioni sul #${i + 1} membro del team:`);
   for (let key in ourTeamInfo[i]) {
@@ -44,3 +49,10 @@ for (let i = 0; i < ourTeamInfo.length; i++) {
   }
 };
 
+// Stampo le informazioni di ogni membro sul DOM tramite un ciclo FOR con ciclo FOR IN innestato
+for (let i = 0; i < ourTeamInfo.length; i++) {
+  ourTeamSection.innerHTML += (`<h4>Informazioni sul #${i + 1} membro del team:</h4>`);
+  for (let key in ourTeamInfo[i]) {
+    ourTeamSection.innerHTML += (`<strong>${key.toUpperCase()}:</strong> <em>${ourTeamInfo[i][key]}</em> <br>`);
+  }
+};
