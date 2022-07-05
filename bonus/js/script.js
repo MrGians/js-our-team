@@ -48,18 +48,18 @@ for (let i = 0; i < ourTeamInfo.length; i++) {
   cardElement.appendChild(jobElement);
 
   for (let key in ourTeamInfo[i]) {
-
+    console.log(key);
     // Se la key è "firstname" allora verrà inserito il suo valore + il valore di "lastname" dentro <h5>
-    if (ourTeamInfo[i][key] === ourTeamInfo[i]["firstname"]) {
+    if (key === "firstname") {
       nameElement.append(`${ourTeamInfo[i]["firstname"]} ${ourTeamInfo[i]["lastname"]}`);
     }
     // Se la key è "job" allora verrà inserito il suo valore dentro <h6>
-    else if (ourTeamInfo[i][key] === ourTeamInfo[i]["job"]) {
+    else if (key === "job") {
       jobElement.append(`${ourTeamInfo[i]["job"]}`);
     }
     // Se la key è "photo" allora verrà creato un elemento <img>,
     // ed inserito dentro <figure> con il relativo attributo src
-    else if (ourTeamInfo[i][key] === ourTeamInfo[i]["photo"]) {
+    else if (key === "photo") {
       const imageElement = document.createElement("img");
       imageElement.src = `img/${ourTeamInfo[i]["photo"]}`;
       photoElement.appendChild(imageElement);
