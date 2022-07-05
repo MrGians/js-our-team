@@ -35,3 +35,12 @@ const ourTeamInfo = [
   {firstname: "Scott", lastname: "Estrada", job: "Developer", photo: "scott-estrada-developer.jpg"},
   {firstname: "Barbara", lastname: "Ramos", job: "Graphic Designer", photo: "barbara-ramos-graphic-designer.jpg"},
 ]
+
+// Stampo le informazioni di ogni membro in console tramite un FOR con FOR IN innestato
+for (let i = 0; i < ourTeamInfo.length; i++) {
+  console.log(`Informazioni sul #${i + 1} membro del team:`);
+  for (let key in ourTeamInfo[i]) {
+    console.log(`${key}: ${ourTeamInfo[i][key]}`);
+  }
+};
+
