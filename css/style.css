@@ -4,3 +4,8 @@ h4 {
   margin-top: 1rem;
   border-top: 2px solid brown;
 }
+
+img {
+  max-width: 200px;
+  display: block;
+}
